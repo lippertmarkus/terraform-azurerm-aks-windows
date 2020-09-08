@@ -1,4 +1,4 @@
-# terraform-aks-windows
+# terraform-azurerm-aks-windows
 
 Terraform definition for creating a Kubernetes cluster via Azure Kubernetes Service (AKS) with both a Linux and Windows node pool for testing purposes. You can then run hybrid workloads within your cluster like your CI/CD pipeline like described in my [blog post](TODO) (coming soon).
 
