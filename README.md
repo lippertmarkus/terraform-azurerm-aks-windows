@@ -15,4 +15,8 @@ In the `variables.tf` file you can find additional parameters which you can spec
 
 ## Interact with the cluster
 
-After the deployment you get the `kube_config` as an output. Store it in `~/.kube/config` on Linux or `%userprofile%\.kube\config` on Windows to use it as default. You can then interact with the Cluster with CLIs like [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl/) and [`helm`](https://helm.sh/docs/intro/install/).
+After the deployment you get the `kube_config` as an output. Store it in `~/.kube/config` on Linux or `%userprofile%\.kube\config` on Windows to use it as default:
+```bash
+terraform output kube_config > ~/.kube/config 
+```
+You can then interact with the Cluster with CLIs like [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl/) and [`helm`](https://helm.sh/docs/intro/install/).
